@@ -1,0 +1,293 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		18DB0BAF15C6147100374ED7 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18DB0BAE15C6147100374ED7 /* Cocoa.framework */; };
+		18DB0BB915C6147100374ED7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 18DB0BB715C6147100374ED7 /* InfoPlist.strings */; };
+		18DB0BBB15C6147100374ED7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 18DB0BBA15C6147100374ED7 /* main.m */; };
+		18DB0BBF15C6147100374ED7 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 18DB0BBD15C6147100374ED7 /* Credits.rtf */; };
+		18DB0BC215C6147100374ED7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 18DB0BC115C6147100374ED7 /* AppDelegate.m */; };
+		18DB0BC515C6147100374ED7 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18DB0BC315C6147100374ED7 /* MainMenu.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		18DB0BAA15C6147100374ED7 /* Scenit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Scenit.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		18DB0BAE15C6147100374ED7 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		18DB0BB115C6147100374ED7 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		18DB0BB215C6147100374ED7 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		18DB0BB315C6147100374ED7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		18DB0BB615C6147100374ED7 /* Scenit-Info.plist */ = {isa = PBXFileReference; path = "Scenit-Info.plist"; sourceTree = "<group>"; };
+		18DB0BB815C6147100374ED7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		18DB0BBA15C6147100374ED7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		18DB0BBC15C6147100374ED7 /* Scenit-Prefix.pch */ = {isa = PBXFileReference; path = "Scenit-Prefix.pch"; sourceTree = "<group>"; };
+		18DB0BBE15C6147100374ED7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		18DB0BC015C6147100374ED7 /* AppDelegate.h */ = {isa = PBXFileReference; path = AppDelegate.h; sourceTree = "<group>"; };
+		18DB0BC115C6147100374ED7 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		18DB0BC415C6147100374ED7 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		18DB0BA715C6147100374ED7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18DB0BAF15C6147100374ED7 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		18DB0B9F15C6147000374ED7 = {
+			isa = PBXGroup;
+			children = (
+				18DB0BB415C6147100374ED7 /* Scenit */,
+				18DB0BAD15C6147100374ED7 /* Frameworks */,
+				18DB0BAB15C6147100374ED7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		18DB0BAB15C6147100374ED7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				18DB0BAA15C6147100374ED7 /* Scenit.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		18DB0BAD15C6147100374ED7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				18DB0BAE15C6147100374ED7 /* Cocoa.framework */,
+				18DB0BB015C6147100374ED7 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		18DB0BB015C6147100374ED7 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				18DB0BB115C6147100374ED7 /* AppKit.framework */,
+				18DB0BB215C6147100374ED7 /* CoreData.framework */,
+				18DB0BB315C6147100374ED7 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		18DB0BB415C6147100374ED7 /* Scenit */ = {
+			isa = PBXGroup;
+			children = (
+				18DB0BC015C6147100374ED7 /* AppDelegate.h */,
+				18DB0BC115C6147100374ED7 /* AppDelegate.m */,
+				18DB0BC315C6147100374ED7 /* MainMenu.xib */,
+				18DB0BB515C6147100374ED7 /* Supporting Files */,
+			);
+			path = Scenit;
+			sourceTree = "<group>";
+		};
+		18DB0BB515C6147100374ED7 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				18DB0BB615C6147100374ED7 /* Scenit-Info.plist */,
+				18DB0BB715C6147100374ED7 /* InfoPlist.strings */,
+				18DB0BBA15C6147100374ED7 /* main.m */,
+				18DB0BBC15C6147100374ED7 /* Scenit-Prefix.pch */,
+				18DB0BBD15C6147100374ED7 /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		18DB0BA915C6147100374ED7 /* Scenit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 18DB0BC815C6147100374ED7 /* Build configuration list for PBXNativeTarget "Scenit" */;
+			buildPhases = (
+				18DB0BA615C6147100374ED7 /* Sources */,
+				18DB0BA715C6147100374ED7 /* Frameworks */,
+				18DB0BA815C6147100374ED7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Scenit;
+			productName = Scenit;
+			productReference = 18DB0BAA15C6147100374ED7 /* Scenit.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		18DB0BA115C6147000374ED7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0430;
+			};
+			buildConfigurationList = 18DB0BA415C6147000374ED7 /* Build configuration list for PBXProject "Scenit" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 18DB0B9F15C6147000374ED7;
+			productRefGroup = 18DB0BAB15C6147100374ED7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				18DB0BA915C6147100374ED7 /* Scenit */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		18DB0BA815C6147100374ED7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18DB0BB915C6147100374ED7 /* InfoPlist.strings in Resources */,
+				18DB0BBF15C6147100374ED7 /* Credits.rtf in Resources */,
+				18DB0BC515C6147100374ED7 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		18DB0BA615C6147100374ED7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18DB0BBB15C6147100374ED7 /* main.m in Sources */,
+				18DB0BC215C6147100374ED7 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		18DB0BB715C6147100374ED7 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				18DB0BB815C6147100374ED7 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		18DB0BBD15C6147100374ED7 /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				18DB0BBE15C6147100374ED7 /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		18DB0BC315C6147100374ED7 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				18DB0BC415C6147100374ED7 /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		18DB0BC615C6147100374ED7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		18DB0BC715C6147100374ED7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		18DB0BC915C6147100374ED7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Scenit/Scenit-Prefix.pch";
+				INFOPLIST_FILE = "Scenit/Scenit-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		18DB0BCA15C6147100374ED7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Scenit/Scenit-Prefix.pch";
+				INFOPLIST_FILE = "Scenit/Scenit-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		18DB0BA415C6147000374ED7 /* Build configuration list for PBXProject "Scenit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18DB0BC615C6147100374ED7 /* Debug */,
+				18DB0BC715C6147100374ED7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		18DB0BC815C6147100374ED7 /* Build configuration list for PBXNativeTarget "Scenit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18DB0BC915C6147100374ED7 /* Debug */,
+				18DB0BCA15C6147100374ED7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 18DB0BA115C6147000374ED7 /* Project object */;
+}
