@@ -7,13 +7,30 @@
 //
 
 #import "AppDelegate.h"
+#import "ColladaWindowController.h"
+
+@interface AppDelegate () {
+    NSMutableArray* windows;
+}
+
+@end
 
 @implementation AppDelegate
 
 @synthesize window = _window;
 
+- (id)init
+{
+    if (self = [super init]) {
+        self->windows = [[NSMutableArray alloc] initWithCapacity:5];
+    }
+
+    return self;
+}
+
 - (void)dealloc
 {
+    [self->windows release];
     [super dealloc];
 }
 
@@ -32,9 +49,14 @@
     [open_panel beginWithCompletionHandler:^(NSInteger result) {
         if (result == NSFileHandlingPanelOKButton) {
             for (NSURL* file_path in [open_panel URLs]) {
-                assert([file_path isKindOfClass:[NSURL class]]);
                 // Open a window for the file
                 NSLog(@"Got %@\n", file_path);
+                NSString* contents = [NSString stringWithContentsOfURL:file_path
+                                                          usedEncoding:Nil
+                                                                 error:Nil];
+                [self->windows addObject:[[ColladaWindowController alloc]
+                                          initWithWindowNibName:@"ColladaWindow" text:contents]];
+                [(NSWindowController*)[self->windows lastObject] showWindow:Nil];
             }
         }
     }];

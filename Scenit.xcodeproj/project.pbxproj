@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		18501F8B15CB754A009CE5EC /* ColladaWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18501F8915CB754A009CE5EC /* ColladaWindow.xib */; };
+		18501F9A15CB9752009CE5EC /* ColladaWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18501F9915CB9752009CE5EC /* ColladaWindowController.m */; };
 		18DB0BAF15C6147100374ED7 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18DB0BAE15C6147100374ED7 /* Cocoa.framework */; };
 		18DB0BB915C6147100374ED7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 18DB0BB715C6147100374ED7 /* InfoPlist.strings */; };
 		18DB0BBB15C6147100374ED7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 18DB0BBA15C6147100374ED7 /* main.m */; };
@@ -16,6 +18,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		18501F8A15CB754A009CE5EC /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ColladaWindow.xib; sourceTree = "<group>"; };
+		18501F9815CB9752009CE5EC /* ColladaWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ColladaWindowController.h; sourceTree = "<group>"; };
+		18501F9915CB9752009CE5EC /* ColladaWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ColladaWindowController.m; sourceTree = "<group>"; };
 		18DB0BAA15C6147100374ED7 /* Scenit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Scenit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		18DB0BAE15C6147100374ED7 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		18DB0BB115C6147100374ED7 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -43,10 +48,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		18501F9B15CB98CF009CE5EC /* xibs */ = {
+			isa = PBXGroup;
+			children = (
+				18DB0BC315C6147100374ED7 /* MainMenu.xib */,
+				18501F8915CB754A009CE5EC /* ColladaWindow.xib */,
+			);
+			name = xibs;
+			sourceTree = "<group>";
+		};
 		18DB0B9F15C6147000374ED7 = {
 			isa = PBXGroup;
 			children = (
-				18DB0BB415C6147100374ED7 /* Scenit */,
+				18501F9B15CB98CF009CE5EC /* xibs */,
+				18DB0BB415C6147100374ED7 /* Source */,
 				18DB0BAD15C6147100374ED7 /* Frameworks */,
 				18DB0BAB15C6147100374ED7 /* Products */,
 			);
@@ -79,14 +94,16 @@
 			name = "Other Frameworks";
 			sourceTree = "<group>";
 		};
-		18DB0BB415C6147100374ED7 /* Scenit */ = {
+		18DB0BB415C6147100374ED7 /* Source */ = {
 			isa = PBXGroup;
 			children = (
 				18DB0BC015C6147100374ED7 /* AppDelegate.h */,
 				18DB0BC115C6147100374ED7 /* AppDelegate.m */,
-				18DB0BC315C6147100374ED7 /* MainMenu.xib */,
+				18501F9815CB9752009CE5EC /* ColladaWindowController.h */,
+				18501F9915CB9752009CE5EC /* ColladaWindowController.m */,
 				18DB0BB515C6147100374ED7 /* Supporting Files */,
 			);
+			name = Source;
 			path = Scenit;
 			sourceTree = "<group>";
 		};
@@ -155,6 +172,7 @@
 				18DB0BB915C6147100374ED7 /* InfoPlist.strings in Resources */,
 				18DB0BBF15C6147100374ED7 /* Credits.rtf in Resources */,
 				18DB0BC515C6147100374ED7 /* MainMenu.xib in Resources */,
+				18501F8B15CB754A009CE5EC /* ColladaWindow.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -167,12 +185,22 @@
 			files = (
 				18DB0BBB15C6147100374ED7 /* main.m in Sources */,
 				18DB0BC215C6147100374ED7 /* AppDelegate.m in Sources */,
+				18501F9A15CB9752009CE5EC /* ColladaWindowController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		18501F8915CB754A009CE5EC /* ColladaWindow.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				18501F8A15CB754A009CE5EC /* en */,
+			);
+			name = ColladaWindow.xib;
+			path = Scenit;
+			sourceTree = "<group>";
+		};
 		18DB0BB715C6147100374ED7 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -195,6 +223,7 @@
 				18DB0BC415C6147100374ED7 /* en */,
 			);
 			name = MainMenu.xib;
+			path = Scenit;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -286,6 +315,7 @@
 				18DB0BCA15C6147100374ED7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
